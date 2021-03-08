@@ -1,0 +1,38 @@
+* {
+   box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+}
+
+nav {
+	background-color: #FFFFFF;
+	color: #000000;
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav-left {
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+}
+
+.nav-right {
+	display: flex;
+	list-style-type: none;
+}
+
+.nav-right li {
+	padding: 10px;
+	margin: 10px;
+}
+
+.logo {
+	height: 60px;
+	width: 60px;
+	padding: 10px;
+	margin: 10px;
+}
+

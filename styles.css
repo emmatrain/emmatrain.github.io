@@ -1,0 +1,120 @@
+* {
+   box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%; /*16px (so 1 rem = 10px)*/
+}
+
+body {
+	margin: 0;
+}
+
+.diagonal-box {
+	background-image: linear-gradient(45deg, #ed4264, #ffedbc); /*dark pink into yellow*/
+	transform: skewY(-11deg);
+	padding: 100px;
+}
+
+.content {
+	max-width: 100em;
+	margin: 0 auto;
+	transform: skewY(11deg);
+}
+
+.home-arrow {
+	height: 55px;
+	position: fixed;
+	right: 50px;
+	top: 90%;
+}
+
+/* NAV STYLING */
+
+nav {
+	margin: 50px 150px 10px;
+	background-color: transparent;
+	display: flex;
+	justify-content: flex-end;
+}
+
+nav li {
+	padding: 20px;
+	font-family: 'Montserrat', sans-serif;
+	list-style-type: none;
+	font-size: 1.8rem;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+nav a:link    {color:#ed4264;} /*dark pink*/
+nav a:visited {color:#ed4264;} /*dark pink*/
+nav a:hover   {color:#FFFFFF;}
+nav a:active  {color:#ed4264;} /*dark pink*/
+
+/* HEADER STYLING */
+
+header {
+	margin: 120px 100px;
+	background-color: transparent;
+	color: #FFFFFF;
+	width: 900px;
+}
+
+header h1 {
+	font-family: 'Londrina Solid', serif;
+	font-weight: 500;
+	font-size: 6rem;
+}
+
+header h1 span {
+	font-family: 'Londrina Outline';
+}
+
+header h1 span:hover {
+	font-family: 'Londrina Solid', serif;
+}
+
+header h2, h3 {
+	font-family: 'Montserrat', sans-serif;
+	color: #FFFFFF;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.8rem;
+}
+
+header a:link, a:visited, a:active {
+	text-decoration: none;
+	color: #ed4264; /*dark pink*/
+}
+
+header a:hover {
+	text-decoration: underline;
+}
+
+/* ABOUT SECTION STYLING */
+
+#about {
+	margin: 20px 150px 100px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.bio-content h2 {
+	font-family: 'Londrina Solid', serif;
+	color: #ed4264; /*dark pink*/
+	font-size: 4rem;
+}
+
+.bio-content p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5rem;
+	width: 700px;
+}

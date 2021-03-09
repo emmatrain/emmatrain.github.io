@@ -82,11 +82,11 @@ header h2, h3 {
 	color: #FFFFFF;
 }
 
-header h2 {
+h2 {
 	font-size: 2rem;
 }
 
-header h3 {
+h3 {
 	font-size: 1.8rem;
 }
 

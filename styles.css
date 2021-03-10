@@ -10,6 +10,10 @@ body {
 	margin: 0;
 }
 
+a {
+	font-family: 'Montserrat', sans-serif;
+}
+
 .diagonal-box-one {
 	background-image: linear-gradient(45deg, #ed4264, #ffedbc); /*dark pink into yellow*/	
 	transform: skewY(-11deg);
@@ -40,7 +44,6 @@ nav {
 
 nav li {
 	padding: 20px;
-	font-family: 'Montserrat', sans-serif;
 	list-style-type: none;
 	font-size: 1.8rem;
 }
@@ -112,6 +115,29 @@ header img {
 	padding: 20px;
 }
 
+
+/*MAIN STYLING*/
+
+#about h1, #projects h1 {
+	font-family: 'Montserrat', sans-serif;
+	color: #ed4264; /*dark pink*/
+	font-size: 3rem;
+}
+
+#about h2, #projects h2 {
+	font-family: 'Montserrat', sans-serif;
+	color: #ed4264; /*dark pink*/
+	font-weight: 500;
+	font-size: 2rem;
+}
+
+#about h3, #projects h3 {
+	font-family: 'Montserrat', sans-serif;
+	color: #000000;
+	font-weight: 500;
+	font-size: 1.5rem;
+}
+
 /* ABOUT SECTION STYLING */
 
 #about {
@@ -126,47 +152,25 @@ header img {
 	width: 350px;
 }
 
-.bio-content h2 {
-	font-family: 'Montserrat', serif;
-	color: #ed4264; /*dark pink*/
-	font-size: 4rem;
-}
-
 .bio-content p {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.5rem;
 	width: 700px;
+	color: #000000;
 }
+
+/*PROJECTS STYLING*/
 
 #projects {
 	width: 100%;
 }
 
 #projects h1 {
-	font-family: 'Montserrat', sans-serif;
-	color: #ed4264; /*dark pink*/
-	font-weight: 500;
-	font-size: 3rem;
 	margin: 0px 0px 0px 100px;
 }
 
-
-h2 {
-	font-family: 'Montserrat', sans-serif;
-	color: #ed4264; /*dark pink*/
-	font-weight: 500;
-	font-size: 2rem;
-}
-
-#projects h1 span {
+#projects h2 span {
 	font-family: 'Londrina Outline';
-}
-
-#projects h3 {
-	font-family: 'Montserrat', sans-serif;
-	color: #000000;
-	font-weight: 500;
-	font-size: 1.5rem;
 }
 
 .projects-container {
@@ -186,7 +190,7 @@ h2 {
 }
 
 .projects-container a {
-	font-family: 'Montserrat', sans-serif;
+
 	color: #ed4264; /*dark pink*/
 	font-size: 1.5rem;
 	padding: 10px 10px 10px 0;

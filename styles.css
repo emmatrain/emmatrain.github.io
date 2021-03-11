@@ -13,11 +13,6 @@ a {
 	text-decoration: none;
 }
 
-li {
-	padding: 20px;
-	list-style-type: none;
-	font-size: 1.8rem;
-}
 
 .diagonal-box-one {
 	background-image: linear-gradient(45deg, #ed4264, #ffedbc); /*dark pink into yellow*/	
@@ -48,11 +43,13 @@ nav {
 
 nav a {
 	text-decoration: none;
+	padding: 20px;
+	font-size: 1.8rem;
 }
 
 nav a, footer a:link    {color:#ed4264;} /*dark pink*/
 nav a, footer a:visited {color:#ed4264;} /*dark pink*/
-nav a, footer a:hover   {color:#FFFFFF;}
+nav a, footer a:hover   {color:#ed4264;}
 nav a, footer a:active  {color:#ed4264;} /*dark pink*/
 
 
@@ -135,7 +132,7 @@ header img {
 #about h3, 
 #projects h3 {
 	font-family: 'Montserrat', sans-serif;
-	color: #0000;
+	color: #000000;
 	font-weight: 500;
 	font-size: 1.5rem;
 }
@@ -152,6 +149,7 @@ header img {
 	border-radius: 50%;
 	height: 350px;
 	width: 330px;
+	object-fit: cover;
 }
 
 .bio-content p {
@@ -215,7 +213,7 @@ header img {
 	padding: 10px 10px 10px 0;
 }
 
-.hide {
+.hidden-repsonsive-sections {
 	display: none;
 }
 
@@ -230,6 +228,11 @@ footer {
 	justify-content: center;
 }
 
+footer a {
+	padding: 10px;
+	font-size: 1.5rem;
+}
+
 /*RESPONSIVE STYLYING*/
 
 @media only screen and (max-width: 600px) {
@@ -238,27 +241,24 @@ footer {
 		width: 100%;
 	}
 	
-	.show {
-		display: none;
-	}
-	
 	.home-arrow {
 		display: none;
 	}
 	
-	.hide {
+	.hidden-repsonsive-sections {
 		display: block;
-	}
-	.responsive-nav {
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		align-items: center;
-		background-image: linear-gradient(45deg, #ed4264, #ffedbc); /*dark pink into yellow*/
+		margin: 0;
 	}
 	
 	.responsive-nav a {
 		color: white;
+		font-size: 2rem;
+		width: 650px;
+	}
+	
+	.responsive-nav li {
+		list-style-type: none;
+		padding: 8px;
 	}
 	
 	.responsive-intro {
@@ -299,6 +299,7 @@ footer {
 		display: block;
 		font-family: 'Montserrat', serif;
 		font-size: 1rem;
+		justify-items: center;
 	}
 		
 	.bio-content h2 {
@@ -312,8 +313,24 @@ footer {
 		font-size: 1.5rem;
 		width: 300px;
 	}
+
+
+	footer {
+		font-size: 0.2rem;
+		padding: 10px;
+		height: 50%;
+		display: flex;
+		flex-direction: column;
+	}
 	
-	.projects-wrapper {
+	footer a {
+		padding: 5px;
+		font-size: 1.5rem;
+	}
+}
+
+@media only screen and (max-width: 1160px) {
+	#about {
 		padding: 30px 0 0 0;
 		margin: 10px 100px 100px;
 		display: block;
@@ -321,13 +338,30 @@ footer {
 		font-size: 1rem;
 		justify-items: center;
 	}
+}
+
+@media only screen and (max-width: 1380px) {
+.projects-wrapper {
+	padding: 30px 0 0 0;
+	margin: 10px 100px 100px;
+	display: block;
+	font-family: 'Montserrat', serif;
+	font-size: 1rem;
+	justify-items: center;
+}
+}
 
 
-	footer {
-		font-size: 0.2rem;
-		padding: 5px;
-		height: 50%;
-		display: flex;
-		flex-direction: column;
-	}
+@media only screen and (max-width: 650px) {
+.responsive-nav {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+	background-image: linear-gradient(45deg, #ed4264, #ffedbc); /*dark pink into yellow*/
+}
+
+.show-wide-nav {
+	display: none;
+}
 }
